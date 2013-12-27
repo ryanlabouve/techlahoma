@@ -4,16 +4,16 @@ Feature: Sign In
   Sign in will happen via GitHub (and possibly other auth providers)
 
   Scenario: Sucessful sign in
-    Given a signed out users
+    Given a signed out user
     When he visits the home page
     Then he should see "Sign In"
-    When he signs in
+    When he signs in with GitHub
     Then he should see "Sign Out"
 
   Scenario: Failed sign in
-    Given a signed out users
+    Given a signed out user
     When he visits the home page
     Then he should see "Sign In"
-    When he fails the signs in
+    When he fails the sign in with GitHub
     Then he should see "Sign In"
     Then he should see "sorry"
