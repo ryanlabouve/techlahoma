@@ -1,28 +1,38 @@
-== README
+# techlahoma
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Feature files
 
-Things you may want to cover:
+The `features` dir contains Cucumber feature files that describe high level features.  New featues 
+should usually start as a new feature file with only a `Feature` section, then some discussion 
+should take place to reach agreement about exactly what the new feature is.  `Scenario` sections should
+be written for each use case or edge case that can be identified.  Finally code should be written to 
+make each scenario pass.
 
-* Ruby version
+## Contributing
 
-* System dependencies
+Please do!  We love pull requests.
+
+## Misc
+
+* Ruby version - 2.0.0p353
+
+* System dependencies - Postgres
 
 * Configuration
 
-* Database creation
+* Database creation - `rake db:create;`
 
-* Database initialization
+* Database initialization - `rake db:schema:load`
 
-* How to run the test suite
+* How to run the test suite - `cucumber`
 
-* Services (job queues, cache servers, search engines, etc.)
+* Services - none
 
-* Deployment instructions
+* Deployment instructions - TBD
 
 * ...
 
+* ???
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* profit
+
