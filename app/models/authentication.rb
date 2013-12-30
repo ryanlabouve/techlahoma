@@ -6,11 +6,13 @@ class Authentication < ActiveRecord::Base
   end
 
   def self.create_from_omniauth(auth)
+    info = auth["user_info"] || auth["info"]
+    name = info["name"] rescue ""
     create! do |authentication|
       authentication.provider = auth["provider"]
       authentication.uid = auth["uid"]
-      authentication.name = auth["user_info"]["name"]
-      authentication.user = User.create(:name => auth["user_info"]["name"])
+      authentication.name = name
+      authentication.user = User.create(:name => name)
     end
   end
 end
