@@ -1,2 +1,7 @@
 <h1>Sign In</h1>
 <%= link_to "Sign In With GitHub", "/auth/github" %>
+
+<% unless Rails.env.production? %>
+  <br />
+  <%= link_to "Sign In With Developer", "/auth/developer" %>
+<% end %>
