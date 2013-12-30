@@ -11,9 +11,19 @@ Then(/^he should see "(.*?)"$/) do |text|
 end
 
 When(/^he signs in with GitHub$/) do
-  pending # express the regexp above with the code you wish you had
+  click_on "Sign In"
+  page.should have_content("Sign In With GitHub")
+  click_on "Sign In With GitHub"
 end
 
 When(/^he fails the sign in with GitHub$/) do
   pending # express the regexp above with the code you wish you had
+end
+
+Then(/^User\.count should == (\d+)$/) do |arg1|
+  User.count.should == arg1.to_i
+end
+
+Then(/^Authentication\.count should == (\d+)$/) do |arg1|
+  Authentication.count.should == arg1.to_i
 end

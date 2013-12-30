@@ -1,8 +1,11 @@
 Techlahoma::Application.routes.draw do
+  get "sessions/new"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  get "signin" => "sessions#new", :as => :signin
+  get "signout" => "sessions#destroy", :as => :signout
+  get "/auth/:provider/callback" => "sessions#create"
   # You can have the root of your site routed with "root"
   root "home#index"
 
