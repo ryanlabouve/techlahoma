@@ -11,16 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131229043052) do
+ActiveRecord::Schema.define(version: 20131230023412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "authentications", force: true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "blog_entries", force: true do |t|
-    t.integer "blogroll_id", null: false
-    t.text    "title",       null: false
-    t.text    "entry_uri",   null: false
-    t.date    "posted_date", null: false
+    t.integer "blog_roll_id", null: false
+    t.text    "title",        null: false
+    t.text    "entry_uri",    null: false
+    t.date    "posted_date",  null: false
   end
 
   add_index "blog_entries", ["entry_uri"], name: "unique_entry_uri", unique: true, using: :btree
@@ -32,6 +41,12 @@ ActiveRecord::Schema.define(version: 20131229043052) do
     t.text    "feed_uri",                   null: false
     t.text    "feed_type",                  null: false
     t.boolean "active_flag", default: true, null: false
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
