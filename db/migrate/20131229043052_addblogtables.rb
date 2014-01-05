@@ -15,13 +15,13 @@ class Addblogtables < ActiveRecord::Migration
       execute('CREATE TABLE blog_entries
       (
         id serial NOT NULL,
-        blogroll_id integer NOT NULL,
+        blog_roll_id integer NOT NULL,
         title text NOT NULL,
         entry_uri text NOT NULL,
         posted_date date NOT NULL,
         CONSTRAINT blogentries_pkey PRIMARY KEY (id),
         CONSTRAINT unique_entry_uri UNIQUE (entry_uri),
-        FOREIGN KEY (blogroll_id) REFERENCES public.blog_rolls(id)        
+        FOREIGN KEY (blog_roll_id) REFERENCES public.blog_rolls(id)        
       );')
   end
 end

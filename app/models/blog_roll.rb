@@ -1,6 +1,7 @@
 require 'feed-normalizer'
 class BlogRoll < ActiveRecord::Base
-
+  self.table_name = 'public.blog_rolls'
+  has_many :blog_entries
 
   def self.harvest_new_entries()
     rollin = BlogRoll.where('active_flag = true').all
