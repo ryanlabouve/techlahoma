@@ -17,7 +17,8 @@ When(/^he signs in with GitHub$/) do
 end
 
 When(/^he fails the sign in with GitHub$/) do
-  pending # express the regexp above with the code you wish you had
+  # This is where you end up if you click "Access denied" during GitHub auth
+  visit "/auth/github/callback?error=access_denied"
 end
 
 Then(/^User\.count should == (\d+)$/) do |arg1|

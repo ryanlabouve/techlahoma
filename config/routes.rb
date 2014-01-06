@@ -6,6 +6,9 @@ Techlahoma::Application.routes.draw do
   get "signin" => "sessions#new", :as => :signin
   get "signout" => "sessions#destroy", :as => :signout
   match "/auth/:provider/callback" => "sessions#create", :via => [:get, :post]
+  
+  get '/auth/failure' => "sessions#omniauth_failure"
+  
   # You can have the root of your site routed with "root"
   root 'buzz#index'
 
