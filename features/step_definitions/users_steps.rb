@@ -2,6 +2,11 @@ Given(/^a signed out user$/) do
   # this doesn't need any explicit action
 end
 
+Given(/^a signed in user$/) do
+  visit "/signin"
+  click_on "Sign In With GitHub"
+end
+
 When(/^he visits the home page$/) do
   visit "/"
 end
@@ -27,4 +32,14 @@ end
 
 Then(/^Authentication\.count should == (\d+)$/) do |arg1|
   Authentication.count.should == arg1.to_i
+end
+
+
+
+When(/^he signs out$/) do
+  click_on "Sign Out"
+end
+
+When(/^he fails the sign out$/) do
+  pending # express the regexp above with the code you wish you had
 end

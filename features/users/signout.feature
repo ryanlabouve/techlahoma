@@ -3,6 +3,7 @@ Feature: Sign Out
   I want to sign out
   To protect my account stuff
 
+  @omniauth_test
   Scenario: Successful sign out
     Given a signed in user
     When he visits the home page
@@ -10,6 +11,7 @@ Feature: Sign Out
     When he signs out
     Then he should see "Sign In"
 
+  @omniauth_test
   Scenario: Failed sign out
     Given a signed in user
     When he visits the home page
