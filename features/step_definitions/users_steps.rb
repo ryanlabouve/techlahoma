@@ -7,11 +7,21 @@ Given(/^a signed in user$/) do
   click_on "Sign In With GitHub"
 end
 
+Given(/^a user signed in with GitHub$/) do
+  visit "/signin"
+  click_on "Sign In With GitHub"
+end
+
 When(/^he visits the home page$/) do
   visit "/"
 end
 
-Then(/^he should see "(.*?)"$/) do |text|
+When(/^she visits her profile$/) do
+  visit "/profile"
+end
+
+
+Then(/^[s]?he should see "(.*?)"$/) do |text|
   page.should have_content(text)
 end
 
@@ -19,6 +29,10 @@ When(/^he signs in with GitHub$/) do
   click_on "Sign In"
   page.should have_content("Sign In With GitHub")
   click_on "Sign In With GitHub"
+end
+
+When(/^she adds her Twitter account$/) do
+  click_on "Add your Twitter account"
 end
 
 When(/^he fails the sign in with GitHub$/) do

@@ -1,4 +1,5 @@
 Techlahoma::Application.routes.draw do
+  get "profile" => "profile#index"
   get "sessions/new"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
