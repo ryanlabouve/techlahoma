@@ -1,5 +1,6 @@
 Techlahoma::Application.routes.draw do
   get "buzz/index"
+  get "profile" => "profile#index"
   get "sessions/new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

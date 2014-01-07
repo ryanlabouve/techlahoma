@@ -4,10 +4,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    Rails.logger.debug "omniauth.auth --------------"
-    Rails.logger.debug env["omniauth.auth"]
-    authentication = Authentication.from_omniauth(env["omniauth.auth"])
-    user = authentication.user || authentication.create_user
+    authentication = Authentication.from_omniauth(env["omniauth.auth"],current_user)
+    user = authentication.user # || authentication.create_user
     session[:user_id] = user.id
     redirect_to root_url, notice: "Signed in!"
   end
