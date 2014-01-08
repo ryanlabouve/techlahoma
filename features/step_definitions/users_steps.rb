@@ -7,9 +7,9 @@ Given(/^a signed in user$/) do
   click_on "Sign In With GitHub"
 end
 
-Given(/^a user signed in with GitHub$/) do
+Given(/^a user signed in with (.*?)$/) do |service|
   visit "/signin"
-  click_on "Sign In With GitHub"
+  click_on "Sign In With #{service}"
 end
 
 When(/^he visits the home page$/) do
@@ -18,6 +18,10 @@ end
 
 When(/^she visits her profile$/) do
   visit "/profile"
+end
+
+When(/^she removes her (.*?) account$/) do |service|
+  click_on "Remove #{service}"
 end
 
 
@@ -31,8 +35,8 @@ When(/^he signs in with GitHub$/) do
   click_on "Sign In With GitHub"
 end
 
-When(/^she adds her Twitter account$/) do
-  click_on "Add your Twitter account"
+When(/^she adds her (.*?) account$/) do |service|
+  click_on "Add your #{service} account"
 end
 
 When(/^he fails the sign in with GitHub$/) do
@@ -48,7 +52,9 @@ Then(/^Authentication\.count should == (\d+)$/) do |arg1|
   Authentication.count.should == arg1.to_i
 end
 
-
+When(/^she makes the provider public$/) do
+  click_on "Yes, make this public."
+end
 
 When(/^he signs out$/) do
   click_on "Sign Out"

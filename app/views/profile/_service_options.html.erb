@@ -1,0 +1,5 @@
+<% if !current_user.authentication_for(service) %>
+  <%= link_to "Add your #{friendly} account", "/auth/#{service}" %>
+<% else %>
+  <%= link_to "Remove #{friendly}", current_user.authentication_for(service), :data => {:confirm => 'Are you sure?'}, :method => :delete %>
+<% end %>

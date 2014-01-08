@@ -5,9 +5,9 @@ class SessionsController < ApplicationController
 
   def create
     authentication = Authentication.from_omniauth(env["omniauth.auth"],current_user)
-    user = authentication.user # || authentication.create_user
+    user = authentication.user
     session[:user_id] = user.id
-    redirect_to root_url, notice: "Signed in!"
+    redirect_to profile_path, notice: "Signed in!"
   end
 
   def destroy

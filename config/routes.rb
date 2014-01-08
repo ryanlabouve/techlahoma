@@ -1,15 +1,15 @@
 Techlahoma::Application.routes.draw do
   get "buzz/index"
-  get "profile" => "profile#index"
+  get "profile" => "profile#index", :as => :profile
   get "sessions/new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   get "signin" => "sessions#new", :as => :signin
   get "signout" => "sessions#destroy", :as => :signout
   match "/auth/:provider/callback" => "sessions#create", :via => [:get, :post]
-  
   get '/auth/failure' => "sessions#omniauth_failure"
-  
+
+  resources :authentications, :only => [:destroy]
   # You can have the root of your site routed with "root"
   root 'buzz#index'
 
