@@ -14,10 +14,9 @@ Feature: Multiple Auth Providers
     When she adds her Twitter account
     Then User.count should == 1
     Then Authentication.count should == 2
-    Then she should see "Would you like to make this public?"
-    When she makes the provider public
     Then she should see "Remove Twitter"
-    Then she should see "Hide Twitter"
+    When she removes her Twitter account
+    Then she should see "Add your Twitter account"
 
   @omniauth_test
   Scenario: Add GitHub
@@ -25,7 +24,6 @@ Feature: Multiple Auth Providers
     When she visits her profile
     Then she should see "Add your GitHub account"
     When she adds her GitHub account
-    Then she should see "Would you like to make this public?"
-    When she does not make the provider public
     Then she should see "Remove GitHub"
-    Then she should see "Show GitHub"
+    When she removes her GitHub account
+    Then she should see "Add your GitHub account"

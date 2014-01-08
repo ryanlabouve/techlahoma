@@ -1,2 +1,8 @@
-<%= link_to "Add your Twitter account", "/auth/twitter" %>
+<h1>Your Profile</h1>
+
+<%= render 'service_options', :service => 'twitter', :friendly => 'Twitter' %>
+<br/>
+<%= render 'service_options', :service => 'github', :friendly => 'GitHub' %>
+
+
 
