@@ -26,10 +26,38 @@ class BlogRoll < ActiveRecord::Base
 
 
   def self.parse_feed_normal(feed_uri, blog_id, datefilter)
-    feed = FeedNormalizer::FeedNormalizer.parse open(feed_uri)
-  
-    feed.entries.each do |item|
+    
+    # this method is still pretty gross and needs help
+    counter = 2
+    begin
+        p counter
+        feed = FeedNormalizer::FeedNormalizer.parse open(feed_uri)
+        #feed = FeedNormalizer::FeedNormalizer.parse open("http://datachomp.com/atom.xml")
+        if feed.entries.nil?
+          sleep 2
+          p 'the lion sleeps tonight'
+          feed = FeedNormalizer::FeedNormalizer.parse open(feed_uri)
+        end
+      rescue Timeout::Error => e
+        p 'timeouts'  
+        p e.message
+        return false
+      rescue OpenURI::HTTPError => e
+        p 'this whole thing is broken'
+        p e.message
+        return false
+      rescue NoMethodError => e
+        p 'no method here'
+        p e.message
+        return false
+      rescue RuntimeError  => e
+        p 'it broke'
 
+        p e.message
+        (counter-=1) < 0 ? raise : retry  #lets just rety twice
+      end
+        
+    feed.entries.each do |item|
       dateland = item.date_published  || item.last_updated
 
       if dateland.to_date > datefilter
@@ -43,8 +71,7 @@ class BlogRoll < ActiveRecord::Base
           entry.posted_date = dateland
           entry.save
         end
-       end  #end if
-
+      end  #end if
     end
   end
 
