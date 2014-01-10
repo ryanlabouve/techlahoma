@@ -1,2 +1,8 @@
 <h1>Buzz#index</h1>
 <p>Find me in app/views/buzz/index.html.erb</p>
+
+  <% @blogs.each do |b| %>
+<p><%= b[:title] %></p>
+<p><a class="btn" href="<%= b[:entry_uri] %>">Read more at <%= b[:blog_title] %> &raquo;</a></p>
+  <% end%>
+  

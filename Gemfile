@@ -29,7 +29,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 #parsers
-gem 'feed-normalizer'
+gem 'feed-normalizer', require: false
+gem 'twitter', '~> 5.0',  require: false
 
 # OmniAuth
 gem "omniauth-github", "~> 1.1.1"
