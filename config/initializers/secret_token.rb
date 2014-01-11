@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Techlahoma::Application.config.secret_key_base = '992a434aa7295b0e0ea763abb8ff0e670c4a4758bed82d9e57d7aac17aa549d21b8d97bb991d1a723d2b6601bdaf70f8c876ec137d1532956028cbedace94ce6'
+Techlahoma::Application.config.secret_key_base = ENV['SECRET_KEY_BASE'] || "techalahomato"
