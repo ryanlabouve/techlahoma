@@ -5,7 +5,8 @@ Techlahoma::Application.routes.draw do
     get "index" => :index
     get "updatethevariousblogs" => :updatethevariousblogs
   end
-  
+
+  get "blogs" => "blog#index"
   
   get "profile" => "profile#index", :as => :profile
   get "sessions/new"
