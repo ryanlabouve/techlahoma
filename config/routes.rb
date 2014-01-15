@@ -1,14 +1,13 @@
 Techlahoma::Application.routes.draw do
 
-  
   scope path: '/buzz', controller: :buzz do
-    get "index" => :index
+    get "/" => :index
     get "updatethevariousblogs" => :updatethevariousblogs
   end
 
-  get "blogs" => "blog#index"
-
-  get "companies" => "companies#index"
+  scope path: '/companies', controller: :companies do
+    get "/" => :index
+  end
   
   get "profile" => "profile#index", :as => :profile
   get "sessions/new"
@@ -20,7 +19,7 @@ Techlahoma::Application.routes.draw do
   get '/auth/failure' => "sessions#omniauth_failure"
 
   resources :authentications, :only => [:destroy]
-  # You can have the root of your site routed with "root"
+
   root 'buzz#index'
 
   # Example of regular route:
