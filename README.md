@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/techlahoma/techlahoma.png?branch=master)](https://travis-ci.org/techlahoma/techlahoma)
 [![Code Climate](https://codeclimate.com/repos/52f48b37695680575a0062d4/badges/740ac521c17011d57196/gpa.png)](https://codeclimate.com/repos/52f48b37695680575a0062d4/feed)
+[![Coverage Status](https://coveralls.io/repos/techlahoma/techlahoma/badge.png)](https://coveralls.io/r/techlahoma/techlahoma)
+[![Dependency Status](https://gemnasium.com/techlahoma/techlahoma.png)](https://gemnasium.com/techlahoma/techlahoma)
 
 
 ## Feature files
