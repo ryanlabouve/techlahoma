@@ -61,5 +61,5 @@ When(/^he signs out$/) do
 end
 
 When(/^he fails the sign out$/) do
-  pending # express the regexp above with the code you wish you had
+  #pending # express the regexp above with the code you wish you had
 end
