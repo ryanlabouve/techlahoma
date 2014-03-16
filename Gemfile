@@ -36,17 +36,22 @@ gem 'twitter', '~> 5.0',  require: false
 gem "omniauth-github", "~> 1.1.1"
 gem "omniauth-twitter", "~> 1.0.1"
 
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
 group :test do
   gem "rspec-rails", "~> 2.14.0"
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+end
+
+group :development, :test do
+  gem 'quiet_assets'
+  gem 'letter_opener' #email gem
+
+  gem 'thin' #not webrick
+
+  gem 'brakeman'#security
+
+  gem "bullet" #orm profiling
 end
 
 group :production do
@@ -56,6 +61,11 @@ end
 
 # Code coverage
 gem 'coveralls', require: false
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
