@@ -1,5 +1,6 @@
 Techlahoma::Application.routes.draw do
 
+  get "user_group/index"
   scope path: '/buzz', controller: :buzz do
     get "/" => :index
     get "updatethevariousblogs" => :updatethevariousblogs
@@ -8,7 +9,12 @@ Techlahoma::Application.routes.draw do
   scope path: '/companies', controller: :companies do
     get "/" => :index
   end
-  
+
+  scope path: '/groups', controller: :user_group do
+    get "/" => :index
+  end
+
+
   get "profile" => "profile#index", :as => :profile
   get "sessions/new"
   # The priority is based upon order of creation: first created -> highest priority.
