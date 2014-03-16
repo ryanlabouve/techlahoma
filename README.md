@@ -8,10 +8,10 @@
 
 ## Feature files
 
-The `features` dir contains Cucumber feature files that describe high level features.  New featues 
-should usually start as a new feature file with only a `Feature` section, then some discussion 
+The `features` dir contains Cucumber feature files that describe high level features.  New featues
+should usually start as a new feature file with only a `Feature` section, then some discussion
 should take place to reach agreement about exactly what the new feature is.  `Scenario` sections should
-be written for each use case or edge case that can be identified.  Finally code should be written to 
+be written for each use case or edge case that can be identified.  Finally code should be written to
 make each scenario pass.
 
 ## Contributing
@@ -20,7 +20,7 @@ Please do!  We love pull requests.
 
 ## Misc
 
-* Ruby version - 2.1.0p0
+* Ruby version - 2.1.1
 
 * System dependencies - Postgres
 
@@ -41,4 +41,3 @@ Please do!  We love pull requests.
 * ???
 
 * profit
-
