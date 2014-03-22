@@ -26,7 +26,7 @@ Please do!  We love pull requests.
 
 * Configuration
 
-* Database creation - `rake db:create;`
+* Database creation - `rake db:create`
 
 * Database initialization - `rake db:schema:load`
 
