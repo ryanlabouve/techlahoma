@@ -6,17 +6,17 @@ Feature: Sign In
   @omniauth_test
   Scenario: Sucessful sign in
     Given a signed out user
-    When he visits the home page
-    Then he should see "Sign In"
-    When he signs in with GitHub
+    When they visit the home page
+    Then they should see "Sign In"
+    When they sign in with GitHub
     Then User.count should == 1
     Then Authentication.count should == 1
-    Then he should see "Sign Out"
+    Then they should see "Sign Out"
 
   Scenario: Failed sign in
     Given a signed out user
-    When he visits the home page
-    Then he should see "Sign In"
-    When he fails the sign in with GitHub
-    Then he should see "Sign In"
-    Then he should see "sorry"
+    When they visit the home page
+    Then they should see "Sign In"
+    When they fail the sign in with GitHub
+    Then they should see "Sign In"
+    Then they should see "sorry"

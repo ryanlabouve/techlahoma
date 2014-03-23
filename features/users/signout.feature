@@ -6,17 +6,17 @@ Feature: Sign Out
   @omniauth_test
   Scenario: Successful sign out
     Given a signed in user
-    When he visits the home page
-    Then he should see "Sign Out"
-    When he signs out
-    Then he should see "Sign In"
+    When they visit the home page
+    Then they should see "Sign Out"
+    When they sign out
+    Then they should see "Sign In"
 
   # This scenario needs some work
   @omniauth_test
   Scenario: Failed sign out
     Given a signed in user
-    When he visits the home page
-    Then he should see "Sign Out"
-    When he fails the sign out
-    Then he should see "Sign Out"
-    #Then he should see "sorry"
+    When they visit the home page
+    Then they should see "Sign Out"
+    When they fail the sign out
+    Then they should see "Sign Out"
+    #Then they should see "sorry"

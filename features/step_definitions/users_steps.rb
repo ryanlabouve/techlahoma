@@ -12,34 +12,34 @@ Given(/^a user signed in with (.*?)$/) do |service|
   click_on "Sign In With #{service}"
 end
 
-When(/^he visits the home page$/) do
+When(/^they visit the home page$/) do
   visit "/"
 end
 
-When(/^she visits her profile$/) do
+When(/^they visit their profile$/) do
   visit "/profile"
 end
 
-When(/^she removes her (.*?) account$/) do |service|
+When(/^they remove their (.*?) account$/) do |service|
   click_on "Remove #{service}"
 end
 
 
-Then(/^[s]?he should see "(.*?)"$/) do |text|
+Then(/^they should see "(.*?)"$/) do |text|
   page.should have_content(text)
 end
 
-When(/^he signs in with GitHub$/) do
+When(/^they sign in with GitHub$/) do
   click_on "Sign In"
   page.should have_content("Sign In With GitHub")
   click_on "Sign In With GitHub"
 end
 
-When(/^she adds her (.*?) account$/) do |service|
+When(/^they add their (.*?) account$/) do |service|
   click_on "Add your #{service} account"
 end
 
-When(/^he fails the sign in with GitHub$/) do
+When(/^they fail the sign in with GitHub$/) do
   # This is where you end up if you click "Access denied" during GitHub auth
   visit "/auth/github/callback?error=access_denied"
 end
@@ -52,14 +52,14 @@ Then(/^Authentication\.count should == (\d+)$/) do |arg1|
   Authentication.count.should == arg1.to_i
 end
 
-When(/^she makes the provider public$/) do
+When(/^they make the provider public$/) do
   click_on "Yes, make this public."
 end
 
-When(/^he signs out$/) do
+When(/^they sign out$/) do
   click_on "Sign Out"
 end
 
-When(/^he fails the sign out$/) do
+When(/^they fail the sign out$/) do
   #pending # express the regexp above with the code you wish you had
 end
