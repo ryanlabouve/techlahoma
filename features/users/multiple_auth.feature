@@ -9,21 +9,21 @@ Feature: Multiple Auth Providers
   @omniauth_test
   Scenario: Add Twitter
     Given a user signed in with GitHub
-    When she visits her profile
-    Then she should see "Add your Twitter account"
-    When she adds her Twitter account
+    When they visit their profile
+    Then they should see "Add your Twitter account"
+    When they add their Twitter account
     Then User.count should == 1
     Then Authentication.count should == 2
-    Then she should see "Remove Twitter"
-    When she removes her Twitter account
-    Then she should see "Add your Twitter account"
+    Then they should see "Remove Twitter"
+    When they remove their Twitter account
+    Then they should see "Add your Twitter account"
 
   @omniauth_test
   Scenario: Add GitHub
     Given a user signed in with Twitter
-    When she visits her profile
-    Then she should see "Add your GitHub account"
-    When she adds her GitHub account
-    Then she should see "Remove GitHub"
-    When she removes her GitHub account
-    Then she should see "Add your GitHub account"
+    When they visit their profile
+    Then they should see "Add your GitHub account"
+    When they add their GitHub account
+    Then they should see "Remove GitHub"
+    When they remove their GitHub account
+    Then they should see "Add your GitHub account"
