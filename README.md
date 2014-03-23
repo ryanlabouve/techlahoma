@@ -20,15 +20,15 @@ Please do!  We love pull requests.
 
 ## Misc
 
-- Ruby version - 2.1.1
-- System dependencies - Postgres
-- Configuration
-- Database creation - `rake db:create`
-- Database initialization - `rake db:schema:load`
-- How to run the test suite - `cucumber`
-  - Before running tests for first time - `rake db:test:prepare`
-- Services - none
-- Deployment instructions - TBD
-- ...
-- ???
-- profit
+* Ruby version - 2.1.1
+* System dependencies - Postgres
+* Configuration
+* Database creation - `rake db:create`
+* Database initialization - `rake db:schema:load`
+* How to run the test suite - `cucumber`
+  * Before running tests for first time - `rake db:test:prepare`
+* Services - none
+* Deployment instructions - TBD
+* ...
+* ???
+* profit
