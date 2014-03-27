@@ -6,10 +6,17 @@ Techlahoma::Application.routes.draw do
     get "updatethevariousblogs" => :updatethevariousblogs
   end
 
+  scope path: '/community', controller: :community do
+    get "/" => :index
+    get "/codeofconduct" => :codeofconduct
+    get "/contributors" => :contributors
+  end
+
   scope path: '/companies', controller: :companies do
     get "/" => :index
   end
 
+  
   scope path: '/groups', controller: :user_group do
     get "/" => :index
   end
