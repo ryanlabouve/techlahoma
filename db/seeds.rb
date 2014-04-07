@@ -19,7 +19,7 @@ u.save
 
 u = Usergroup.new
 u.name = 'okc js'
-u.website = "http://okcjs.com"
+u.website = "http://okcjs.org"
 u.logo_url = "https://pbs.twimg.com/profile_images/1732166342/js_bigger.jpg"
 u.twitter = 'okcjs'
 u.location = "the exchange"
