@@ -23,7 +23,7 @@ u.website = "http://okcjs.com"
 u.logo_url = "https://pbs.twimg.com/profile_images/1732166342/js_bigger.jpg"
 u.twitter = 'okcjs'
 u.location = "the exchange"
-u.meetupdate = "3rd Tuesdat"
+u.meetupdate = "3rd Tuesday"
 u.email = 'oklahomacityjavascript@gmail.com'
 u.blurb = "OKC js is focused on helping Oklahoma Javascripters to connect and share ideas. We hope you will join us."
 u.save
