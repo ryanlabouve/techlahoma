@@ -13,12 +13,6 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-# gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -36,22 +30,18 @@ gem 'twitter', '~> 5.0',  require: false
 gem "omniauth-github", "~> 1.1.1"
 gem "omniauth-twitter", "~> 1.0.1"
 
-group :test do
-  gem "rspec-rails", "~> 2.14.0"
-  gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-end
 
 group :development, :test do
   gem 'quiet_assets'
   gem 'letter_opener' #email gem
 
   gem 'thin' #not webrick
-
-  gem 'brakeman'#security
-
   gem "bullet" #orm profiling
+
+  gem "rspec-rails", "~> 2.14.0"
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
 end
 
 group :production do
@@ -67,14 +57,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
