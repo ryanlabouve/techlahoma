@@ -1,8 +1,8 @@
-Metro-contextual: Techlahoma isn't OKC-lahoma. It will be started and initially cultivated in OKC, this is simply for the sake of keeping things simple why we iron initial wrinkles out. In other words, A feature is only officially finished when no one is excluded.
+Metro-contextual: Techlahoma isn't OKC-lahoma. It will be started and initially cultivated in OKC, but this is simply for the sake of keeping things simple while we iron initial wrinkles out. In other words, a feature is only officially finished when no one is excluded.
 
 Purpose: The goal of Techlahoma is to raise the awareness of technology in our area and cultivate a positive community effect.
 
-Exclusive: The core of Techlahoma will be open source. The data will not be open (logistical choice and auth token privacy), but an API will exist to supplement that side. If much of the site itself is driven by the API, then the technical choice of rails as the backend isn't a large barrier of entry for people working on the front end (get consensus on that)
+Exclusive: The core of Techlahoma will be open source. The data will not be open (logistical choice and auth token privacy), but an API will exist to supplement that side. If much of the site itself is driven by the API, then the technical choice of rails as the backend isn't a large barrier to entry for people working on the front end (get consensus on that).
 
 
 Techlahoma will have 3 major parts.
