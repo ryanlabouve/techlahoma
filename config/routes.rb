@@ -12,13 +12,9 @@ Techlahoma::Application.routes.draw do
     get "/contributors" => :contributors
   end
 
-  scope path: '/companies', controller: :companies do
-    get "/" => :index
-  end
-
-  
   scope path: '/groups', controller: :user_group do
     get "/" => :index
+    get "/index" => :index
   end
 
 
