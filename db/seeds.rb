@@ -35,6 +35,7 @@ u.location = "varies"
 u.email = ""
 u.meetupdate = "First Tuesday @ 6:30pm"
 u.blurb = "Oklahoma City’s local Cocoaheads group devoted to the discussion of iOS and Mac programming."
+u.save
 
 u = Usergroup.new
 u.name = 'okc sql'
