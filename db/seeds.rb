@@ -19,7 +19,7 @@ u.save
 u = Usergroup.new
 u.name = 'okc js'
 u.website = "http://okcjs.org"
-u.logo_url = "https://pbs.twimg.com/profile_images/1732166342/js_bigger.jpg"
+u.logo_url = "http://techlahoma.com/images/logos/okcjs.png"
 u.twitter = 'okcjs'
 u.location = "the exchange"
 u.meetupdate = "3rd Tuesday"
@@ -44,7 +44,7 @@ u.logo_url = "http://www.okcsql.org/wp-content/uploads/2014/02/minimalist_alpha_
 u.twitter = 'okcsql'
 u.location = "dell"
 u.meetupdate = "2nd Monday"
-u.email = ' '
+u.email = 'info@okcsql.org'
 u.blurb = "OKC SQL is focused on helping Oklahoma to connect, query, and share ideas. We hope you will join us."
 u.save
 
@@ -52,9 +52,9 @@ u.save
 u = Usergroup.new
 u.name = 'ok gd'
 u.website = "http://okgd.org"
-u.logo_url = "http://www.okcruby.org/images/okcruby.png"
-u.twitter = ' '
-u.location = " "
+u.logo_url = "http://photos1.meetupstatic.com/photos/event/6/e/2/a/global_204688202.jpeg"
+u.location = "varies"
+u.facebook = "https://www.facebook.com/groups/okgamedevs/"
 u.meetupdate = "Last Thursday"
 u.email = ' '
 u.blurb = "OK GD is focused on helping Oklahoma Game Developers to connect and share ideas. We hope you will join us."
