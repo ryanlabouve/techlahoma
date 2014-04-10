@@ -8,7 +8,7 @@ starter = BlogRoll.create("octolabs", "jeremy green", "http://octolabs.com/", "h
 u = Usergroup.new
 u.name = 'okc ruby'
 u.website = "http://okcruby.org"
-u.logo_url = "http://www.okcruby.org/images/okcruby.png"
+u.logo_url = "/images/logos/okcruby.png"
 u.twitter = 'okcrb'
 u.location = "the exchange"
 u.meetupdate = "2nd Thursday"
@@ -19,7 +19,7 @@ u.save
 u = Usergroup.new
 u.name = 'okc js'
 u.website = "http://okcjs.org"
-u.logo_url = "http://techlahoma.com/images/logos/okcjs.png"
+u.logo_url = "/images/logos/okcjs.png"
 u.twitter = 'okcjs'
 u.location = "the exchange"
 u.meetupdate = "3rd Tuesday"
@@ -30,7 +30,7 @@ u.save
 u = Usergroup.new
 u.name = 'cocoaheads okc'
 u.website = "http://www.cocoaokc.org/"
-u.logo_url = "http://techlahoma.com/images/logos/cocoaokc-xcode.png"
+u.logo_url = "/images/logos/cocoaokc-xcode.png"
 u.twitter = "cocoaokc"
 u.location = "varies"
 u.email = ""
@@ -41,7 +41,7 @@ u.save
 u = Usergroup.new
 u.name = 'okc sql'
 u.website = "http://okcsql.org"
-u.logo_url = "http://www.okcsql.org/wp-content/uploads/2014/02/minimalist_alpha_back100x100.png"
+u.logo_url = "/images/logos/okcsql.png"
 u.twitter = 'okcsql'
 u.location = "dell"
 u.meetupdate = "2nd Monday"
@@ -53,7 +53,7 @@ u.save
 u = Usergroup.new
 u.name = 'ok gd'
 u.website = "http://okgamedev.com/"
-u.logo_url = "http://photos1.meetupstatic.com/photos/event/6/e/2/a/global_204688202.jpeg"
+u.logo_url = "/images/logos/okcgd.jpeg"
 u.twitter = " OKGameDevs"
 u.location = "varies"
 u.facebook = "https://www.facebook.com/groups/okgamedevs/"
@@ -66,7 +66,7 @@ u.save
 u = Usergroup.new
 u.name = 'okc jug'
 u.website = "http://okcjug.org"
-u.logo_url = "https://pbs.twimg.com/profile_images/74805092/duke_bigger.jpeg"
+u.logo_url = "/images/logos/okcjug.jpeg"
 u.twitter = 'okcjug'
 u.location = "nw okc library"
 u.meetupdate = "2nd Tuesday"
@@ -78,7 +78,7 @@ u.save
 u = Usergroup.new
 u.name = 'oklahoma php'
 u.website = "www.meetup.com/OklahomaPHP"
-u.logo_url = "https://pbs.twimg.com/profile_images/423253652170891264/Vq6F3oYT_bigger.jpeg"
+u.logo_url = "/images/logos/okcphp.jpeg"
 u.twitter = 'OklahomaPHP'
 u.location = "the exchange"
 u.meetupdate = "1st Tuesday"
