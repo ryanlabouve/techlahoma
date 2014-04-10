@@ -52,12 +52,13 @@ u.save
 
 u = Usergroup.new
 u.name = 'ok gd'
-u.website = "http://okgd.org"
+u.website = "http://okgamedev.com/"
 u.logo_url = "http://photos1.meetupstatic.com/photos/event/6/e/2/a/global_204688202.jpeg"
+u.twitter = " OKGameDevs"
 u.location = "varies"
 u.facebook = "https://www.facebook.com/groups/okgamedevs/"
 u.meetupdate = "Last Thursday"
-u.email = ' '
+u.email = ""
 u.blurb = "OK GD is focused on helping Oklahoma Game Developers to connect and share ideas. We hope you will join us."
 u.save
 
@@ -69,7 +70,7 @@ u.logo_url = "https://pbs.twimg.com/profile_images/74805092/duke_bigger.jpeg"
 u.twitter = 'okcjug'
 u.location = "nw okc library"
 u.meetupdate = "2nd Tuesday"
-u.email = ' '
+u.email = ""
 u.blurb = "OKC Jug is focused on helping Oklahoma Java Devs to connect and share ideas. We hope you will join us."
 u.save
 
@@ -81,6 +82,6 @@ u.logo_url = "https://pbs.twimg.com/profile_images/423253652170891264/Vq6F3oYT_b
 u.twitter = 'OklahomaPHP'
 u.location = "the exchange"
 u.meetupdate = "1st Tuesday"
-u.email = ' '
+u.email = ""
 u.blurb = "Oklahoma PHP is focused on helping Oklahoma PHP devs to connect and share ideas. We hope you will join us."
 u.save
