@@ -11,7 +11,7 @@
         <b>where:</b> <%= u[:location] %><br/>
         <b>contact:</b>
         <% if !u[:email].empty? %>
-          <%= u[:email] %> |
+          <a href="mailto:<%= u[:email] %>">email</a> |
         <% end %>
         <a href="<%= u[:website] %>">website</a>
         <% if u[:twitter] %>
