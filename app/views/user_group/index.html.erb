@@ -9,8 +9,8 @@
       <div>
         <b>when:</b> <%= u[:meetupdate]%><br/>
         <b>where:</b> <%= u[:location] %><br/>
-        <b>contact:</b> 
-        <% if u[:email] %>
+        <b>contact:</b>
+        <% if !u[:email].empty? %>
           <%= u[:email] %> |
         <% end %>
         <a href="<%= u[:website] %>">website</a>
