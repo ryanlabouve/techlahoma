@@ -30,6 +30,7 @@ u.save
 u = Usergroup.new
 u.name = 'cocoaheads okc'
 u.website = "http://www.cocoaokc.org/"
+u.logo_url = "http://techlahoma.com/images/logos/cocoaokc-xcode.png"
 u.twitter = "cocoaokc"
 u.location = "varies"
 u.email = ""
