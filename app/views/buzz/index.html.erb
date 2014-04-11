@@ -1,13 +1,11 @@
 
 <h1>Happenings</h1>
 
-<% @blogs.each do |b| %>
 <div class="row">
-	<div class="col-lg-4">
-		<%= b[:title] %>
+<% @blogs.each do |b| %>
+	<div class="col-lg-5  col-techlahoma col-techlahoma-blog">
+		<h3><%= b[:title] %></h3>
+		<a class="btn pull-right" href="<%= b[:entry_uri] %>">Read more at <%= b[:blog_title] %> &raquo;</a>
 	</div>
-	<div class="col-lg-8">
-		<a class="btn" href="<%= b[:entry_uri] %>">Read more at <%= b[:blog_title] %> &raquo;</a>
-	</div>
-</div>
 <% end%>
+</div>

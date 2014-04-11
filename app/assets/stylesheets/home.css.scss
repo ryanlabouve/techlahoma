@@ -5792,6 +5792,14 @@ button.close {
 }
 
 /* techlahoma overrides */
-.btn:hover, .btn:focus {
+.col-techlahoma .btn:hover, .col-techlahoma .btn:focus {
   color: #97310e;
+  text-decoration: underline;
+}
+.col-techlahoma {
+  border: 1px solid gainsboro;
+  margin: 2px;
+}
+.col-techlahoma:hover {
+  background-color: whitesmoke;
 }
