@@ -38,6 +38,9 @@ group :development, :test do
   gem 'thin' #not webrick
   gem "bullet" #orm profiling
 
+  gem 'dotenv-rails'
+
+  #gem 'minitest-rails'
   gem "rspec-rails", "~> 2.14.0"
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended

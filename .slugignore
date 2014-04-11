@@ -3,3 +3,8 @@ GOALS.md
 
 /spec/*
 /features/*
+/test/*
+
+
+.env.development
+.env.test
