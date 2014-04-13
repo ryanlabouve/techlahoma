@@ -4,7 +4,7 @@
 <div class="row">
 <% @blogs.each do |b| %>
 	<div class="col-lg-5  col-techlahoma col-techlahoma-blog">
-		<h3><%= b[:title] %></h3>
+		<h4><%= b[:title] %></h4>
 		<a class="btn pull-right" href="<%= b[:entry_uri] %>">Read more at <%= b[:blog_title] %> &raquo;</a>
 	</div>
 <% end%>
