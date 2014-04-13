@@ -1,7 +1,23 @@
 <h1>Sign In</h1>
-<%= link_to "Sign In With GitHub", "/auth/github" %>
-<br />
-<%= link_to "Sign In With Twitter", "/auth/twitter" %>
+
+<% unless Rails.env.production? %>
+	<%# leave the links working for dev and test environments %>
+	<%= link_to "Sign In With GitHub", "/auth/github" %>
+	<br />
+	<%= link_to "Sign In With Twitter", "/auth/twitter" %>
+<% else %>
+	<%# temporarily disable on production %>
+	<%= link_to "Sign In With GitHub", "#", {:class=>'temp-disable-sign-in'} %>
+	<br />
+	<%= link_to "Sign In With Twitter", "#", {:class=>'temp-disable-sign-in'}  %>
+	<script>
+	$(document).ready(function(){
+		$('a.temp-disable-sign-in').click(function(evt){
+			alert($(this).text() + ' coming soon!')
+		});
+	});
+	</script>
+<% end %>
 
 <% unless Rails.env.production? %>
   <br />
