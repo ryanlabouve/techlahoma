@@ -1,6 +1,6 @@
 <h1>Sign In</h1>
 
-<% unless Rails.env.production? %>
+<% unless false && Rails.env.production? %>
 	<%# leave the links working for dev and test environments %>
 	<%= link_to "Sign In With GitHub", "/auth/github" %>
 	<br />
