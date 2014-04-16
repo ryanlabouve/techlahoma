@@ -11,6 +11,8 @@ Feature: Sign In
     When they sign in with GitHub
     Then User.count should == 1
     Then Authentication.count should == 1
+    Then they should see "Test User"
+    Then they should see "Profile"
     Then they should see "Sign Out"
 
   Scenario: Failed sign in
