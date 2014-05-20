@@ -97,3 +97,14 @@ u.email = ""
 u.blurb = "2600 meetings happen in most major cities around the world on the first Friday of every month at 5 pm local time, often at a location listed at the back of a 2600 magazine. All kinds of hackers are welcome to 2600 meetings (infosec, foss, maker, phreaker, etc.), regardless of whether you are a seasoned expert or a complete n00b. okc2600 is a purely social event that tries to have an exceptionally low barrier to entry for those who are socially awkward or who want to learn but have very little knowledge, although those who are looking for trouble or are easily offended need not attend."
 u.save
 
+u = Usergroup.new
+u.name = 'OKC LUGnuts'
+u.website = "www.okclugnuts.org"
+u.logo_url = "/images/logos/tux.png"
+u.twitter = 'okclugnuts'
+u.location = "the 404"
+u.meetupdate = "2nd Friday"
+u.email = ""
+u.blurb = "OKC LUGnuts is a Linux user group that tries to cater to both beginner desktop users and guru sysadmins alike. We discuss the latest FLOSS news, various useful apps, the pros and cons of different window managers, and occasionally more in-depth details about how important pieces of the OS work. LUGnuts is also a great place to get help for any issues you may have with your Linux system."
+u.save
+
