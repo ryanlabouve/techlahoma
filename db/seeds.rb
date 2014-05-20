@@ -119,3 +119,14 @@ u.email = "issa.okc@gmail.com"
 u.blurb = "ISSA-OKC is the Oklahoma City chapter of the Infortmation Systems Security Association. ISSA is focused on cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure."
 u.save
 
+u = Usergroup.new
+u.name = 'The Irregulars'
+u.website = "www.meetup.com/Oklahoma-City-Ethical-Hacker-Meetup"
+u.logo_url = "/images/logos/root66.png"
+u.twitter = ''
+u.location = "(check meetup.com group)"
+u.meetupdate = "1st and 3rd Wednesday"
+u.email = ""
+u.blurb = "The Irregulars are an ethical hacker group composed of like minded students and professionals. We discuss current events, have member and professional presentations, learn new attack vectors, and play red team / blue team in our virtual lab. Also, we host an annual security conference called Root-66."
+u.save
+
