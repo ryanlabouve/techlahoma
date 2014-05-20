@@ -108,3 +108,14 @@ u.email = ""
 u.blurb = "OKC LUGnuts is a Linux user group that tries to cater to both beginner desktop users and guru sysadmins alike. We discuss the latest FLOSS news, various useful apps, the pros and cons of different window managers, and occasionally more in-depth details about how important pieces of the OS work. LUGnuts is also a great place to get help for any issues you may have with your Linux system."
 u.save
 
+u = Usergroup.new
+u.name = 'ISSA-OKC'
+u.website = "www.issaokc.org"
+u.logo_url = "/images/logos/issaokc.png"
+u.twitter = 'issaokc'
+u.location = "Spaghetti Warehouse"
+u.meetupdate = "3rd Wednesday"
+u.email = "issa.okc@gmail.com"
+u.blurb = "ISSA-OKC is the Oklahoma City chapter of the Infortmation Systems Security Association. ISSA is focused on cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure."
+u.save
+
