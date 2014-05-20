@@ -85,3 +85,15 @@ u.meetupdate = "1st Tuesday"
 u.email = ""
 u.blurb = "Oklahoma PHP is focused on helping Oklahoma PHP devs to connect and share ideas. We hope you will join us."
 u.save
+
+u = Usergroup.new
+u.name = 'okc2600'
+u.website = "okc2600.com"
+u.logo_url = "/images/logos/okc2600.gif"
+u.twitter = ''
+u.location = "Cafe Bella (S 89th and Penn)"
+u.meetupdate = "1st Friday"
+u.email = ""
+u.blurb = "2600 meetings happen in most major cities around the world on the first Friday of every month at 5 pm local time, often at a location listed at the back of a 2600 magazine. All kinds of hackers are welcome to 2600 meetings (infosec, foss, maker, phreaker, etc.), regardless of whether you are a seasoned expert or a complete n00b. okc2600 is a purely social event that tries to have an exceptionally low barrier to entry for those who are socially awkward or who want to learn but have very little knowledge, although those who are looking for trouble or are easily offended need not attend."
+u.save
+
