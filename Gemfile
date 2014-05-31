@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~>4.0.2'
@@ -23,8 +23,7 @@ gem 'turbolinks'
 gem 'jbuilder'#, '~> 1.2'
 
 #parsers
-gem 'feed-normalizer', require: false
-gem 'twitter', '~> 5.0',  require: false
+gem 'googleajax', '~> 1.0.1'
 
 # OmniAuth
 gem "omniauth-github", "~> 1.1.1"
