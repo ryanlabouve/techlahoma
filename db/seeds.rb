@@ -10,7 +10,7 @@ u.name = 'okc ruby'
 u.website = "http://okcruby.org"
 u.logo_url = "/images/logos/okcruby.png"
 u.twitter = 'okcrb'
-u.location = "the exchange"
+u.location = "[Prototek](https://www.google.com/maps/dir//401+NW+10th+St,+Oklahoma+City,+OK+73103/@35.478527,-97.519417,17z/data=!4m13!1m4!3m3!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2s401+NW+10th+St!3b1!4m7!1m0!1m5!1m1!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2m2!1d-97.519417!2d35.478527)"
 u.meetupdate = "2nd Thursday"
 u.email = 'info@okcruby.org'
 u.blurb = "OKC Ruby is focused on helping Oklahoma Rubyists to connect and share ideas. We hope you will join us."
@@ -21,7 +21,7 @@ u.name = 'okc js'
 u.website = "http://okcjs.org"
 u.logo_url = "/images/logos/okcjs.png"
 u.twitter = 'okcjs'
-u.location = "the exchange"
+u.location = "[Prototek](https://www.google.com/maps/dir//401+NW+10th+St,+Oklahoma+City,+OK+73103/@35.478527,-97.519417,17z/data=!4m13!1m4!3m3!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2s401+NW+10th+St!3b1!4m7!1m0!1m5!1m1!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2m2!1d-97.519417!2d35.478527)"
 u.meetupdate = "3rd Tuesday"
 u.email = 'oklahomacityjavascript@gmail.com'
 u.blurb = "OKC js is focused on helping Oklahoma Javascripters to connect and share ideas. We hope you will join us."
