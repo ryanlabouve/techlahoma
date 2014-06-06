@@ -85,3 +85,48 @@ u.meetupdate = "1st Tuesday"
 u.email = ""
 u.blurb = "Oklahoma PHP is focused on helping Oklahoma PHP devs to connect and share ideas. We hope you will join us."
 u.save
+
+u = Usergroup.new
+u.name = 'okc2600'
+u.website = "okc2600.com"
+u.logo_url = "/images/logos/okc2600.gif"
+u.twitter = ''
+u.location = "Cafe Bella (S 89th and Penn)"
+u.meetupdate = "1st Friday"
+u.email = ""
+u.blurb = "2600 meetings happen in most major cities around the world on the first Friday of every month at 5 pm local time, often at a location listed at the back of a 2600 magazine. All kinds of hackers are welcome to 2600 meetings (infosec, foss, maker, phreaker, etc.), regardless of whether you are a seasoned expert or a complete n00b. okc2600 is a purely social event that tries to have an exceptionally low barrier to entry for those who are socially awkward or who want to learn but have very little knowledge, although those who are looking for trouble or are easily offended need not attend."
+u.save
+
+u = Usergroup.new
+u.name = 'OKC LUGnuts'
+u.website = "www.okclugnuts.org"
+u.logo_url = "/images/logos/tux.png"
+u.twitter = 'okclugnuts'
+u.location = "the 404"
+u.meetupdate = "2nd Friday"
+u.email = ""
+u.blurb = "OKC LUGnuts is a Linux user group that tries to cater to both beginner desktop users and guru sysadmins alike. We discuss the latest FLOSS news, various useful apps, the pros and cons of different window managers, and occasionally more in-depth details about how important pieces of the OS work. LUGnuts is also a great place to get help for any issues you may have with your Linux system."
+u.save
+
+u = Usergroup.new
+u.name = 'ISSA-OKC'
+u.website = "www.issaokc.org"
+u.logo_url = "/images/logos/issaokc.png"
+u.twitter = 'issaokc'
+u.location = "Spaghetti Warehouse"
+u.meetupdate = "3rd Wednesday"
+u.email = "issa.okc@gmail.com"
+u.blurb = "ISSA-OKC is the Oklahoma City chapter of the Infortmation Systems Security Association. ISSA is focused on cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure."
+u.save
+
+u = Usergroup.new
+u.name = 'The Irregulars'
+u.website = "www.meetup.com/Oklahoma-City-Ethical-Hacker-Meetup"
+u.logo_url = "/images/logos/root66.png"
+u.twitter = ''
+u.location = "(check meetup.com group)"
+u.meetupdate = "1st and 3rd Wednesday"
+u.email = ""
+u.blurb = "The Irregulars are an ethical hacker group composed of like minded students and professionals. We discuss current events, have member and professional presentations, learn new attack vectors, and play red team / blue team in our virtual lab. Also, we host an annual security conference called Root-66."
+u.save
+
