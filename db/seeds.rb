@@ -130,3 +130,13 @@ u.email = ""
 u.blurb = "The Irregulars are an ethical hacker group composed of like minded students and professionals. We discuss current events, have member and professional presentations, learn new attack vectors, and play red team / blue team in our virtual lab. Also, we host an annual security conference called Root-66."
 u.save
 
+u = Usergroup.new
+u.name = 'OKC Python'
+u.website = "www.okcpython.org"
+u.logo_url = "http://www.okcpython.org/images/okcpython-logo.png"
+u.twitter = 'okcpython'
+u.location = "[Prototek](https://www.google.com/maps/dir//401+NW+10th+St,+Oklahoma+City,+OK+73103/@35.478527,-97.519417,17z/data=!4m13!1m4!3m3!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2s401+NW+10th+St!3b1!4m7!1m0!1m5!1m1!1s0x87b21733fd30d655:0xce3a1cd9b95c8415!2m2!1d-97.519417!2d35.478527)"
+u.meetupdate = "2nd Wednesday at 11:30"
+u.email = "ops@okcpython.org"
+u.blurb = "OKC python is focused on helping Oklahoma Pythonistas to connect and share ideas. We hope you will join us."
+u.save
