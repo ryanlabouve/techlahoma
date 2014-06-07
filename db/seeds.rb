@@ -116,7 +116,7 @@ u.twitter = 'issaokc'
 u.location = "Spaghetti Warehouse"
 u.meetupdate = "3rd Wednesday"
 u.email = "issa.okc@gmail.com"
-u.blurb = "ISSA-OKC is the Oklahoma City chapter of the Infortmation Systems Security Association. ISSA is focused on cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure."
+u.blurb = "ISSA-OKC is the Oklahoma City chapter of the Information Systems Security Association. ISSA is focused on cybersecurity professionals dedicated to advancing individual growth, managing technology risk and protecting critical information and infrastructure."
 u.save
 
 u = Usergroup.new
