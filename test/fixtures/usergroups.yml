@@ -1,0 +1,13 @@
+ruby:
+  id: 1
+  name: 'okc ruby'
+  blurb: 'ruby time'
+  logo_url: 'http://logos.com'
+  location: 'teh exchange'
+  twitter: 'okrb'
+  email: 'stuff@okcruby.org'
+  website: 'http://okcruby.org'
+  facebook: nil
+  linkedin: nil
+  created_at: '2014-01-01'
+  updated_at: '2014-01-01'

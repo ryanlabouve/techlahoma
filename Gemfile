@@ -38,6 +38,7 @@ group :development, :test do
   gem "bullet" #orm profiling
 
   gem 'dotenv-rails'
+  gem 'minitest'
 
   #gem 'minitest-rails'
   gem "rspec-rails", "~> 2.14.0"
