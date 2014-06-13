@@ -34,6 +34,12 @@ Techlahoma::Application.routes.draw do
       scope path: '/blog', controller: :blog do
         get '/feed' => :feed
       end
+      
+      scope path: '/groups', controller: :groups do
+        get '/' => :list_groups
+        get '/:id' => :show_group
+      end
+      
   end # namespace api
 
   root 'buzz#index'
