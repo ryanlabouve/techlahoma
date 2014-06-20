@@ -31,6 +31,7 @@ Techlahoma::Application.routes.draw do
 
 
   namespace "api" do#, :path => "", :constraints => {:subdomain => ["api", "stageapi"]}, :default => {:format => :json} do
+    get "/" => "docs#index"
       scope path: '/blog', controller: :blog do
         get '/feed' => :feed
       end
