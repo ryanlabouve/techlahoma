@@ -80,8 +80,8 @@ u.name = 'oklahoma php'
 u.website = "http://www.meetup.com/OklahomaPHP"
 u.logo_url = "/images/logos/okcphp.jpeg"
 u.twitter = 'OklahomaPHP'
-u.location = "the exchange"
-u.meetupdate = "1st Tuesday"
+u.location = "The 404"
+u.meetupdate = "1st Thursday"
 u.email = ""
 u.blurb = "Oklahoma PHP is focused on helping Oklahoma PHP devs to connect and share ideas. We hope you will join us."
 u.save
