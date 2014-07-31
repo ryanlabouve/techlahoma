@@ -80,8 +80,8 @@ u.name = 'oklahoma php'
 u.website = "http://www.meetup.com/OklahomaPHP"
 u.logo_url = "/images/logos/okcphp.jpeg"
 u.twitter = 'OklahomaPHP'
-u.location = "the exchange"
-u.meetupdate = "1st Tuesday"
+u.location = "The 404"
+u.meetupdate = "1st Thursday"
 u.email = ""
 u.blurb = "Oklahoma PHP is focused on helping Oklahoma PHP devs to connect and share ideas. We hope you will join us."
 u.save
@@ -194,4 +194,16 @@ u.location = "Warren 2 Building"
 u.meetupdate = "Last Tuesday"
 u.email = ""
 u.blurb = ""
+u.save
+
+u = Usergroup.new
+u.name = 'OKC MySQL'
+u.website = "http://www.okcmysql.org"
+u.logo_url = "/images/logos/okcmysql-logo.png"
+u.twitter = 'okcmysql'
+u.location = "Varies"
+u.meetupdate = "4th Wednesday at 7:00PM"
+u.email = "info@okcmysql.org"
+u.facebook = "https://www.facebook.com/okcmysql"
+u.blurb = "okcmysql.org is designed as an open forum through which users of the MySQL (and related) database can collaborate to grow the local ecosystem."
 u.save
